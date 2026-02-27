@@ -1,0 +1,12 @@
+#include <iostream>
+
+    using namespace std;
+int main() {
+    cout << "What is your name?";
+    cout << "Azra";
+    cout << "What is your Student ID?";
+    cout << "20190120023 ";
+    cout << "Your ID is 20190120023.";
+
+    return 0;
+}
