@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float distance;
+    int x1;
+    int x2;
+    int y1;
+    int y2;
+    cout<<"Enter x1: "<< endl;
+    cin>>x1;
+    cout<<"Enter x2: "<< endl;
+    cin>>x2;
+    cout<<"Enter y1: "<< endl;
+    cin>>y1;
+    cout<<"Enter y2: "<< endl;
+    cin>>y2;
+    distance=((x1-x2)*(x1-x2))+((y1-y2)*(y1-y2));
+
+    return 0;
+
+}
