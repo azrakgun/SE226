@@ -10,7 +10,7 @@ void swapValues(int* p1, int* p2) {
 
 void printArray(int* arr, int size) {
     for (int i = 0; i < size; i++) {
-        cout << arr[i] << " ";
+        cout << *(arr+i) << " ";
     }
     cout << endl;
 
@@ -23,9 +23,9 @@ int findMax(int *arr, int size){
             max = *(arr+i);
 
         }
+        return max;
     }
-    return max;
-}
+    
 void reverseArray(int* arr, int size){
     for(int i = 0; i < size / 2; i++) {
         int temp = *(arr + i);
@@ -38,8 +38,9 @@ void reverseArray(int* arr, int size){
 int *createArray(int size) {
     int* arr = new int[size];
     for (int i = 0; i < size; i++) {
-        arr[i] = i + 1;
+      cin >> * (arr +i);
     }
+    return arr;
 }
 void deleteArray(int* arr) {
     delete[] arr;
@@ -53,7 +54,7 @@ int main() {
     cout << "Enter values: " << endl;
 
     int * arr = createArray(size);
-    printArray(arr,size);
+ 
     cout << "Array elements:" << endl;
     printArray(arr, size);
 
@@ -61,8 +62,15 @@ int main() {
 
     cout << "--------------------------" << endl;
     cout << "Swapping two numbers" << endl;
-    cout << "Before swap" << endl;
-
+    int a , b;
+    cout << "Enter a: " ;
+      cin >> a;
+        cout << "Before swap" << endl;
+    cout << "a=" << ",b=" << endl;
+    swapValues(&a,&b);
+      cout << "After swap" << endl;
+    
+      cout << "a=" << a << ",b=" << b<< endl;
 
     cout << "----------------------------------" << endl;
 
