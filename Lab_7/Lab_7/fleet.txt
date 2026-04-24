@@ -1,0 +1,6 @@
+Car,V01,Tesla,2023,Electric,4
+Truck,T01,Volvo,2020,25000,6
+Motorcycle,M01,Yamaha,2024,998,Sport
+Car,V02,BMW,2026,Petrol,4
+Truck,T02,Mercedes,2021,18000,4
+Motorcycle,M02,Suziki,2015,1200,Cruiser
