@@ -2,7 +2,7 @@
 const int LED1 = 43, LED2 = 44, LED3 = 45, LED4 = 46;
 const int btn1Pin = 38, btn2Pin = 39;
 
-// Değişkenler
+
 bool systemOn = false;    
 int currentMode = 1;     
 bool lastBtn1 = LOW, lastBtn2 = LOW; 
